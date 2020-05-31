@@ -1,0 +1,87 @@
+    @charset "UTF-8";
+    body {
+        color: brown;
+        text-align: center;
+    }
+    
+    @keyframes vad {
+        0% {
+            background: linear-gradient(red 10%, black 60%, yellow);
+        }
+        20% {
+            background: linear-gradient(red 30%, black 30%, yellow);
+        }
+        40% {
+            background: linear-gradient(red 50%, black 40%, yellow);
+        }
+        60% {
+            background: linear-gradient(black 50%, red 20%, yellow);
+        }
+        80% {
+            background: linear-gradient(red 60%, yellow 10%, black);
+        }
+        100% {
+            background: linear-gradient(red 60%, black 5%, yellow);
+        }
+    }
+    
+    @keyframes bbt {
+        0% {
+            background: linear-gradient(black 40%, yellow)
+        }
+        17% {
+            background: linear-gradient(black 65%, yellow)
+        }
+        35% {
+            background: linear-gradient(yellow 5%, black 85%, yellow)
+        }
+        55% {
+            background: linear-gradient(yellow 35%, black)
+        }
+        68% {
+            transform: scale(1.5);
+            background: linear-gradient(yellow 65%, black)
+        }
+        84% {
+            transform: scale(2.5);
+            background: linear-gradient(black 5%, yellow 80%, black)
+        }
+        100% {
+            transform: scale(1.5);
+            background: linear-gradient(black 25%, yellow)
+        }
+    }
+    
+    h1:hover {
+        color: blue;
+    }
+    
+    h1 {
+        visibility: hidden;
+    }
+    
+    span {
+        display: block;
+    }
+    
+    footer {
+        color: white;
+        background: linear-gradient(red 10%, black 60%, yellow);
+        border-radius: 55px;
+        animation: vad 5s infinite;
+    }
+    
+    #button {
+        color: white;
+        background: linear-gradient(black 50%, yellow);
+        border-radius: 15px;
+        transform: rotateX(20deg);
+        width: 15%;
+        height: 50px;
+        cursor: pointer;
+        animation: bbt 100s infinite linear;
+    }
+    
+    .filter {
+        transform: rotateX(150deg);
+    }
